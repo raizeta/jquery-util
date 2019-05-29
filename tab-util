@@ -1,0 +1,15 @@
+//Function Select Specific Tab Index On Load
+$('document').ready(function()
+{
+    $('.nav-tabs > li.active').removeClass('active');
+    $('.tab-content > .tab-pane.active').removeClass('active');
+    $('a[href*="#tab_3"]').attr('aria-expanded','true');
+    $('a[href*="#tab_3"]').parents('li').addClass('active');
+    $(".tab-content #tab_3").addClass('active');
+
+    $('.nav-tabs > li > a').click( function() 
+    {
+        //Get Value Of Tab Href
+        var id_tab = $(this).attr('href');
+    });
+})
