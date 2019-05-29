@@ -1,4 +1,4 @@
-//Function Select Specific Tab Index On Load
+//Function Select Specific Tab Index On Load, Example = tab_3
 $('document').ready(function()
 {
     $('.nav-tabs > li.active').removeClass('active');
